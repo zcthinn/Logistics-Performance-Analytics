@@ -88,3 +88,8 @@ Compares the 6 distribution hubs on load and delay performance.
 - Reassess Dallas Main Hub's capacity allocation vs. order volume
 - Build a driver coaching program targeting individual delay-rate outliers (>5%)
 - Verify status of inactive vehicles (FT-014, FT-024, FT-038, FT-042) before returning to service
+
+## Download
+[https://github.com/zcthinn/retail-sales-powerbi-dashboard/blob/main/Retail%20Sales%20Performance%20%26%20Profitability%20Analytics%20Project.pbix](https://github.com/zcthinn/Logistics-Performance-Analytics/blob/main/data/Logistics.pbix)
+to explore interactively.
+
