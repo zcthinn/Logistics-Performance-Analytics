@@ -8,7 +8,7 @@ This Power BI project analyzes end-to-end logistics operations for a delivery/fr
 ---
 
 ## 🗂️ Report Pages
-(HubAnalysis.png)
+(docs/DataModelView.png)
 
 ### 1. Delivery Performance
 High-level KPI overview of order fulfillment.
