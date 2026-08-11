@@ -8,44 +8,49 @@ This Power BI project analyzes end-to-end logistics operations for a delivery/fr
 ---
 
 ## 🗂️ Report Pages
-(docs/DataModelView.png)
+![Data Model View](docs/DataModelView.png)
 
 ### 1. Delivery Performance
 High-level KPI overview of order fulfillment.
 - **KPIs:** Total Orders (27,979), Total Delivered (27,727), Not Successfully Delivered (252), Delay Rate (21%), Avg Satisfaction (4.17/5)
 - **Visuals:** Delayed orders by month, on-time orders by month, delay count by issue category, delivery duration distribution, satisfaction split by delay status
 - **Key finding:** 99.1% of orders were successfully delivered, but 21.1% experienced delays. Environmental Issues is the leading delay driver (30.2% of delayed orders).
+![Delivery Performance](docs/DeliveryPerformance.png)
 
 ### 2. Correlation of Delay and Customer Satisfaction Analysis
 Quantifies the relationship between delays and customer experience.
 - **KPIs:** Count of Delayed Orders (5,908), Delay–Satisfaction Correlation (**-0.74**), Avg Satisfaction (4.17), Avg Satisfaction When Delayed (2.94), Avg Satisfaction When On-Time (4.50)
 - **Visuals:** Satisfaction gauge, satisfaction score bands ("Very Good/Good" vs "Normal/Poor/Very Poor") by delivery days, satisfaction split donut
 - **Key finding:** A strong negative correlation (-0.74) confirms longer delays are closely tied to lower satisfaction — a 1.56-point satisfaction gap between delayed (2.94) and on-time (4.50) orders.
+![Customer Satisfaction](docs/CustomerSatisfaction.png)
 
 ### 3. Reason of Not Successful Delivery & Reason of Delay Analysis
 Root-cause breakdown of delay/failure reasons.
 - **KPIs:** Total Orders, Delayed Count (5,908), Not Successfully Delivered (252), Most Common Issue Category (Environmental Issues), Most Common Reason (Vehicle Breakdown)
 - **Visuals:** Decomposition tree (Issue Category → Description), delay reason trend, delay reasons by quarter (stacked bar)
 - **Key finding:** Environmental Issues (road construction, severe weather, traffic congestion) account for 30.2% of delays; Vehicle Breakdown is the single largest individual reason (10.5%).
+![Delay Reason](docs/DelayReasonAnalysis.png)
 
 ### 4. Vehicle Analysis
 Fleet-level reliability and breakdown analysis.
 - **KPIs:** Total Vehicles (45), Total Breakdowns (537), Most Breakdown-Prone Vehicle (FT-010), Most-Used Vehicle Type (Van)
 - **Visuals:** Orders vs. breakdowns by vehicle type, breakdowns by purchase year, per-vehicle order/breakdown trend
 - **Key finding:** Vans account for ~64% of categorized breakdowns (312 of 485), followed by Trucks (~23%). Vehicle FT-010 is the top individual breakdown offender. Four vehicles (FT-014, FT-024, FT-038, FT-042) show breakdowns but no associated orders in 2023–2024 — flagged as inactive/unutilized rather than true operational breakdowns.
+![Vehicle Analysis](docs/VehicleAnalysis.png)
 
 ### 5. Driver Performance Analysis
 Evaluates driver-level delay behavior against rating and tenure.
 - **KPIs:** Driver Count (55), Avg Orders/Driver 2023 (254.1), Avg Orders/Driver 2024 (254.6), Delay Rate by Driver (4%), Avg Driver Performance (3.58/5)
 - **Visuals:** Delay rate by performance rating, delay rate per driver, delay by service year, experience vs. delay rate scatter
 - **Key finding:** Overall driver delay rate is ~4% (moderate). Performance-rating-2 drivers have the highest delay rate (5%); the worst individual driver reaches 7%. Experience does not reliably reduce delays — rates hover between 3–6% regardless of tenure.
+![Driver Analysis](docs/DriverAnalysis.png)
 
 ### 6. Hub Performance Analysis
 Compares the 6 distribution hubs on load and delay performance.
 - **KPIs:** Hub Count (6), Avg Hub Capacity (230), Delay Rate by Hub (4.26%), Most Overloaded Hub (Dallas Main Hub)
 - **Visuals:** Delay % by hub, capacity vs. delay scatter, hub load/delay trend, capacity vs. total orders by hub
 - **Key finding:** Houston Hub is the best performer (4.10% delay, 6.9K orders). Fort Worth (4.49%) and Austin (4.48%) have the highest delay rates. Dallas Main Hub is the most overloaded relative to capacity (7.3K orders vs. 250 capacity) and should be monitored closely.
-
+![Hub Analysis](docs/HubAnalysis.png)
 ---
 
 ## 📊 Core Metrics & Data Model (inferred)
