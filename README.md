@@ -1,13 +1,13 @@
 # Logistics Performance Analytics — Power BI Project
 
-## 📌 Overview
+## Overview
 This Power BI project analyzes end-to-end logistics operations for a delivery/freight network — covering **delivery performance, delay root causes, customer satisfaction, vehicle reliability, driver performance, and hub efficiency**. The dashboard is built across **6 report pages**, all cross-filterable by **Year**, and designed to help operations leadership identify where delays originate and prioritize corrective action.
 
 **Scale of data:** 27,979 total orders | 45 vehicles | 55 drivers | 6 hubs
 
 ---
 
-## 🗂️ Report Pages
+## Report Pages
 ![Data Model View](docs/DataModelView.png)
 
 ### 1. Delivery Performance
@@ -53,7 +53,7 @@ Compares the 6 distribution hubs on load and delay performance.
 ![Hub Analysis](docs/HubAnalysis.png)
 ---
 
-## 📊 Core Metrics & Data Model (inferred)
+## Core Metrics & Data Model (inferred)
 | Entity | Fields Observed |
 |---|---|
 | **Orders (Fact)** | OrderID, IsDelayed, IsSuccessDelivery, DeliveryDays, Month/Quarter, Year |
@@ -65,7 +65,7 @@ Compares the 6 distribution hubs on load and delay performance.
 
 ---
 
-## 🎯 Key Business Insights
+## Key Business Insights
 1. **Delay rate is 21.1%** overall — the single biggest lever for improving customer satisfaction, given the -0.74 correlation between delay and satisfaction.
 2. **Environmental factors** (weather, traffic, road construction) are the top delay category, but **Vehicle Breakdown** is the top *individual* cause — pointing to a preventive maintenance opportunity.
 3. **Vans** drive the majority of fleet breakdowns despite being the most-used vehicle type — prioritize preventive maintenance here.
@@ -74,7 +74,7 @@ Compares the 6 distribution hubs on load and delay performance.
 
 ---
 
-## 🛠️ Tools & Techniques Used
+## Tools & Techniques Used
 - **Power BI Desktop** — data modeling, DAX measures, report design
 - **DAX** — KPI cards (Delay Rate %, Avg Satisfaction, Correlation, etc.), calculated measures for on-time/delayed splits
 - **Visuals used:** Line charts, clustered/stacked bar charts, donut charts, gauges, scatter plots, decomposition tree, KPI cards
@@ -82,7 +82,7 @@ Compares the 6 distribution hubs on load and delay performance.
 
 ---
 
-## 🚀 Recommended Next Steps
+## Recommended Next Steps
 - Investigate root causes of Fort Worth & Austin hub delay rates (4.48–4.49%)
 - Launch a preventive maintenance audit for the Van fleet, prioritizing vehicle FT-010
 - Reassess Dallas Main Hub's capacity allocation vs. order volume
